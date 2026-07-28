@@ -4,18 +4,39 @@
   <title>Europsychic</title>
   <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
     
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-      .logo {
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+div {
+  position: relative;
+}
+
+.symbol {
+  position: absolute;
+  width: 250px;
+  opacity: 0.3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.logo {
   font-family: "UnifrakturMaguntia", serif;
   font-size: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+p {
+  position: relative;
+  z-index: 1;
 }
   </style>
 
@@ -24,6 +45,7 @@
 <body>
 
   <div>
+    <img src="europsychic logo no background.png" class="symbol">
     <h1 class="logo">Europsychic</h1>
     <p>Godot comes 01/01/2027</p>
   </div>
